@@ -1,0 +1,76 @@
+Name: Jene (Hojin) Choi
+USC NetId: 6640002284
+CSCI 455 PA1
+Fall 2022
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+HC
+
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+There are no known bugs.
+When the value is larger than 10000, the bars do not fill up.
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+----------------------------------------------
+ANSWERS TO ASSIGNMENT README QUESTIONS (if applicable):
+
+1. In CS 455 what code from the web are you allowed to use in your assignment solution, assuming you modify that code once you get it? (No clue? Hint: Reread the syllabus.) Note: no need to mention the "starter files" for the assignment in your answer.
+It is not allowed to use any code found on the web. The exception is only for the resources provided by course staff and in the textbook.
+If I use any other code from the web that is not written by myself, I should acknowledge its source in README file.
+
+2. What is the probability of each of the three outcomes in a trial: two heads, one head and one tail, and two tails? Why is one of them different than the other two?
+Two heads: 1/4 (25%)
+One head and one tail: 2/4 (50%)
+Two tails: 1/4 (25%)
+
+In tossing 2 coins, probability of getting one head and one tail = P(head, tail) + P(tail, head) = 1/4 + 1/4 = 2/4.
+Thus, it has higher probability than the other two.
+
+3. Roughly how many trials do you need to do before you mostly get results within 1% of these probabilities? Do several simulations using your program to determine an answer to this.
+Number of trials: 10
+Trial 1: Two heads: 40%, One head and one tail: 40%, Two tails: 20%
+Trial 2: Two heads: 10%, One head and one tail: 50%, Two tails: 40%
+Trial 3: Two heads: 10%, One head and one tail: 50%, Two tails: 40%
+Trial 4: Two heads: 20%, One head and one tail: 40%, Two tails: 40%
+
+Number of trials: 20
+Trial 1: Two heads: 5%, One head and one tail: 55%, Two tails: 40%
+Trial 2: Two heads: 25%, One head and one tail: 50%, Two tails: 25%
+Trial 3: Two heads: 25%, One head and one tail: 50%, Two tails: 25%
+Trial 4: Two heads: 5%, One head and one tail: 55%, Two tails: 40%
+...
+
+I have done several trials with 10, 20, 50, 100, 500, 800, 1000.
+When doing roughly 800 trials, it is almost certain to get the calculated possibility. This is due to the law of large numbers.
+
+4. Roughly how many trials can you do before it crashes with an overflow error? State the largest value you tried where it still worked correctly, and one where it overflowed. You can get an idea of what general values to try by looking at the limits on Java integers (see Section 4.1.1 of the text). Play around with your program to verify that it actually works for very large values that are within the limits. Note: this kind of testing can sometimes turn up bugs, so it's good to do. Warning: For very large values you may have to wait a fair amount of time before you get the results.
+
+The largest value I could simulate without an overflow error was 2147483647, the maximum value of int type in java -- any number greater than this will cause stack overflow.
