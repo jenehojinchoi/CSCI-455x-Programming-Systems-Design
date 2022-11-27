@@ -1,0 +1,75 @@
+Name: Hojin Choi
+USC NetID: hojincho
+CS 455 PA4
+Fall 2022
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+HC
+
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+Class Design:
+
+For this project, I used the second approach that is specified in assignment description.
+The following are the descriptions of each class and functions defined in the class.
+
+Class Rack:
+This class creates a rack of scrabble tiles and finds all subsets.
+The subset as a unique identifier is used as a key in AnagramDictionary class.
+Also, letterFreqMap (TreeMap) is constructed to store unique characters in a word and corresponding frequency.
+
+Class AnagramDictionary:
+This class creates a HashMap that stores all anagrams of a word into the same hash bucket.
+key is an alphabetically sorted word, and value is an array of its anagrams.
+
+Class ScoreTable:
+This class constructs a scoreTable. scoreTable is an array with a size of 26, (the number of alphabets).
+According to the letter values in the PA4 description, I indexed scoreTable with character - 'a'.
+
+Class WordFinder:
+This class processes inputs from the user and start the word scrabble.
+Inside the main function, I created startScrabble function. startScrabble creates a rack and takes inputs of words from the user.
+Whenever there is an input of word, it calls getScoresBoard and print it.
+getScoresBoard iterates through all subsets of the input word and saves a score of the anagram of the subset in a scoreBoard.
+printScoresBoard then sorts subsets by scores and print the score of each word.
+
+
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
+
+
