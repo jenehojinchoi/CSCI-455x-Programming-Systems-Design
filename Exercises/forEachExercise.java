@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class forEachExercise {
     public class risk Implements BiConsumer<String, Integer> {
         public static void accept(String k, Integer score) {

@@ -1,0 +1,13 @@
+Names in empty list [exp: <empty>]: 
+Length of empty list [exp: 0]: 0
+
+DEBUG: Called growArr
+DEBUG: new capacity: 6
+Names in pre-loaded list [exp: Ann Bob Carol Don Ed]: 
+Anne
+Bob
+Carol
+Don
+Ed
+Length of pre-loaded list [exp: 5]: 5
+
